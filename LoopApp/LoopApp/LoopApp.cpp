@@ -4,11 +4,11 @@
 
 int main(int argc, char* argv[])
 {
-    srand(time(0));
-    for(;;)
+    srand(time(nullptr)); // seed the random number generator with the current time
+    for (;;) // infinite loop
     {
-        int i = rand() % 10;
-        switch (i)
+        int i = rand() % 10; // generate a random number between 0 and 9
+        switch (i) // check the value of i
         {
         case 1:
             std::cout << "Sensor ID: 1 Triggered" << std::endl;
